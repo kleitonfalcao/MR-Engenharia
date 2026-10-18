@@ -132,19 +132,19 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       </div>
 
       {/* Card Action Footer */}
-      <div className="p-5 sm:p-6 pt-0 border-t border-slate-800/60 mt-4 flex items-center gap-2.5">
-        <button
-          onClick={() => onOpenDetails(mineral)}
-          className="cursor-pointer flex-1 py-2.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors whitespace-nowrap"
-        >
-          <span>{t.minerals.viewDetails}</span>
-          <ArrowUpRight className="w-3.5 h-3.5" />
-        </button>
+      <div className="p-4 sm:p-6 pt-0 border-t border-slate-800/60 mt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
         <button
           onClick={() => onRequestQuote(mineral)}
-          className="cursor-pointer py-2.5 px-4 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold transition-all whitespace-nowrap"
+          className="cursor-pointer order-1 sm:order-2 sm:w-auto py-2.5 px-4 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-extrabold transition-all text-center flex items-center justify-center shadow-sm"
         >
-          {t.minerals.requestSample}
+          <span>{t.minerals.requestSample}</span>
+        </button>
+        <button
+          onClick={() => onOpenDetails(mineral)}
+          className="cursor-pointer order-2 sm:order-1 flex-1 py-2.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors"
+        >
+          <span>{currentLang === 'pt' ? 'Dossiê Técnico' : t.minerals.viewDetails}</span>
+          <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
         </button>
       </div>
     </div>
