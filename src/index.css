@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'Space Mono', monospace;
+  }
+
+  html {
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Tabular figures for data tables and specs */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle mineral grain background overlay */
+.bg-mineral-pattern {
+  background-image: radial-gradient(rgba(245, 158, 11, 0.04) 1px, transparent 1px),
+                    radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
