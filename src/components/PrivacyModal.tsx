@@ -44,11 +44,11 @@ export const PrivacyModal: React.FC<PrivacyModalProps> = ({
         {type === 'privacy' ? (
           <div className="space-y-4">
             <p>
-              A <strong>MR Engenharia</strong> valoriza a segurança e a confidencialidade dos dados comerciais e corporativos submetidos pelos compradores e parceiros em nosso portal institucional.
+              A <strong>MVR Engenharia</strong> valoriza a segurança e a confidencialidade dos dados comerciais e corporativos submetidos pelos compradores e parceiros em nosso portal institucional.
             </p>
             <h4 className="font-bold text-slate-100 text-sm">1. Coleta Mínima & Finalidade</h4>
             <p>
-              Os dados coletados através dos formulários de cotação (nome, empresa, e-mail corporativo, telefone e especificações de compra) destinam-se exclusivamente à análise de viabilidade técnica, emissão de propostas de fornecimento e atendimento direto por Marcus Vinicius.
+              Os dados coletados através dos formulários de cotação (nome, empresa, e-mail corporativo, telefone e especificações de compra) destinam-se exclusivamente à análise de viabilidade técnica, emissão de propostas de fornecimento e atendimento direto por Marcus Ribeiro.
             </p>
             <h4 className="font-bold text-slate-100 text-sm">2. Não Compartilhamento</h4>
             <p>
@@ -62,7 +62,7 @@ export const PrivacyModal: React.FC<PrivacyModalProps> = ({
         ) : (
           <div className="space-y-4">
             <p>
-              O presente website institucional tem como finalidade exclusiva a divulgação técnica e comercial de matérias-primas minerais exportadas pela <strong>MR Engenharia</strong> a partir do Brasil.
+              O presente website institucional tem como finalidade exclusiva a divulgação técnica e comercial de matérias-primas minerais exportadas pela <strong>MVR Engenharia</strong> a partir do Brasil.
             </p>
             <h4 className="font-bold text-slate-100 text-sm">1. Origem das Especificações</h4>
             <p>
@@ -74,7 +74,7 @@ export const PrivacyModal: React.FC<PrivacyModalProps> = ({
             </p>
             <h4 className="font-bold text-slate-100 text-sm">3. Propriedade Intelectual</h4>
             <p>
-              A marca MR Engenharia, sua composição visual, textos originais e elementos gráficos são de titularidade exclusiva.
+              A marca MVR Engenharia, sua composição visual, textos originais e elementos gráficos são de titularidade exclusiva.
             </p>
           </div>
         )}

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Language, TRANSLATIONS } from '../data/i18n';
 import { COMMERCIAL_CONTACT, MINERALS_DATA, MineralProduct } from '../data/minerals';
-import { PhoneCall, Mail, Send, ArrowUp } from 'lucide-react';
+import { PhoneCall, Mail, Send } from 'lucide-react';
 import { MRLogo } from './MRLogo';
+import { CountryFlag } from './CountryFlag';
 
 interface FooterProps {
   currentLang: Language;
@@ -11,11 +12,11 @@ interface FooterProps {
   onOpenPrivacy: (type: 'privacy' | 'terms') => void;
 }
 
-const LANGUAGES: { code: Language; label: string; flag: string }[] = [
-  { code: 'pt', label: 'Português', flag: '🇧🇷' },
-  { code: 'en', label: 'English', flag: '🇺🇸' },
-  { code: 'es', label: 'Español', flag: '🇪🇸' },
-  { code: 'zh', label: '中文', flag: '🇨🇳' }
+const LANGUAGES: { code: Language; label: string }[] = [
+  { code: 'pt', label: 'Português' },
+  { code: 'en', label: 'English' },
+  { code: 'es', label: 'Español' },
+  { code: 'zh', label: '中文' }
 ];
 
 export const Footer: React.FC<FooterProps> = ({
@@ -27,34 +28,34 @@ export const Footer: React.FC<FooterProps> = ({
   const t = TRANSLATIONS[currentLang];
 
   const whatsappUrl = `https://wa.me/${COMMERCIAL_CONTACT.phoneDial.replace('+', '')}?text=${encodeURIComponent(
-    'Olá Marcus Vinicius / MR Engenharia, gostaria de informações sobre fornecimento e exportação de minérios.'
+    'Olá Marcus Ribeiro / MVR Engenharia, gostaria de informações sobre fornecimento e exportação de minérios.'
   )}`;
 
   return (
-    <footer className="bg-slate-950 border-t border-slate-800 text-slate-400 text-xs">
-      {/* Upper Flags & Direct Contact Banner */}
-      <div className="border-b border-slate-800/80 bg-slate-900/60 py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          {/* Explicit Language Flags Strip in Footer */}
-          <div className="flex items-center gap-2">
-            <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mr-1">
-              Idioma / Language:
+    <footer className="bg-slate-950 border-t border-slate-800 text-slate-400 text-xs overflow-hidden">
+      {/* Upper Flags & Direct Contact Banner - Fully responsive on mobile, tablet & desktop, never cuts off */}
+      <div className="border-b border-slate-800/80 bg-slate-900/70 py-4 px-3 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
+          {/* Explicit Language Flags Strip: 2-column grid on mobile to completely prevent horizontal overflow & cutting */}
+          <div className="w-full lg:w-auto flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 text-center sm:text-left">
+            <span className="text-[11px] font-bold text-amber-400 uppercase tracking-wider shrink-0">
+              Idioma / Language / 语言:
             </span>
-            <div className="flex items-center gap-1.5">
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-2 w-full sm:w-auto">
               {LANGUAGES.map((lang) => {
                 const isSelected = currentLang === lang.code;
                 return (
                   <button
                     key={lang.code}
                     onClick={() => onSelectLang(lang.code)}
-                    className={`cursor-pointer flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                    className={`cursor-pointer flex items-center justify-center sm:justify-start gap-2 px-3 py-2 rounded-lg text-xs font-semibold transition-all ${
                       isSelected
-                        ? 'bg-amber-500 text-slate-950 font-bold shadow-sm'
-                        : 'bg-slate-800/80 text-slate-300 hover:text-white hover:bg-slate-750'
+                        ? 'bg-amber-500 text-slate-950 font-bold shadow-md shadow-amber-500/20'
+                        : 'bg-slate-800/80 text-slate-300 hover:text-white hover:bg-slate-700/80 border border-slate-700/60'
                     }`}
                   >
-                    <span className="text-sm leading-none" aria-hidden="true">{lang.flag}</span>
-                    <span className="text-[11px]">{lang.label}</span>
+                    <CountryFlag country={lang.code} size="md" />
+                    <span className="text-xs whitespace-nowrap">{lang.label}</span>
                   </button>
                 );
               })}
@@ -62,19 +63,19 @@ export const Footer: React.FC<FooterProps> = ({
           </div>
 
           {/* Quick Direct WhatsApp & Mail button */}
-          <div className="flex items-center gap-3">
+          <div className="w-full sm:w-auto flex items-center justify-center gap-2.5 pt-2 lg:pt-0 border-t lg:border-t-0 border-slate-800">
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-950/60 text-emerald-400 border border-emerald-800 hover:bg-emerald-900 transition-colors"
+              className="cursor-pointer inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-950/70 text-emerald-400 border border-emerald-800 hover:bg-emerald-900 transition-colors text-xs font-semibold flex-1 sm:flex-none"
             >
               <Send className="w-3.5 h-3.5" />
               <span>WhatsApp Direto</span>
             </a>
             <a
-              href={`mailto:${COMMERCIAL_CONTACT.emailDisplay}`}
-              className="cursor-pointer inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 text-sky-400 border border-slate-700 hover:bg-slate-700 transition-colors"
+              href={`mailto:${COMMERCIAL_CONTACT.emailDisplay}?subject=Consulta Comercial — MVR Engenharia`}
+              className="cursor-pointer inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg bg-slate-800 text-sky-400 border border-slate-700 hover:bg-slate-700 transition-colors text-xs font-semibold flex-1 sm:flex-none"
             >
               <Mail className="w-3.5 h-3.5" />
               <span>E-mail Comercial</span>
@@ -87,7 +88,7 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           {/* Brand & Corporate Overview (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <a href="#" className="cursor-pointer inline-block" aria-label="MR Engenharia Home">
+            <a href="#" className="cursor-pointer inline-block" aria-label="MVR Engenharia Home">
               <MRLogo size="md" showSubtitle={true} />
             </a>
             <p className="text-slate-400 leading-relaxed max-w-sm pt-1">
@@ -178,7 +179,7 @@ export const Footer: React.FC<FooterProps> = ({
           </div>
         </div>
 
-        {/* Legal Links & Clean Disclaimer strictly as requested */}
+        {/* Legal Links & Clean Disclaimer */}
         <div className="pt-8 border-t border-slate-900 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] text-slate-500">
           <div className="text-slate-400 font-medium">
             {t.footer.disclaimer}
@@ -204,7 +205,7 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Copyright */}
         <div className="text-[11px] text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
           <div>
-            © {new Date().getFullYear()} MR Engenharia. {t.footer.rightsReserved}
+            © {new Date().getFullYear()} MVR Engenharia. {t.footer.rightsReserved}
           </div>
           <div className="text-slate-500">
             Salvador · Bahia · Brasil

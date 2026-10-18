@@ -41,7 +41,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   const currentMineralObj = MINERALS_DATA.find((m) => m.id === formData.product) || MINERALS_DATA[0];
 
   const formatInquiryText = () => {
-    return `[SOLICITAÇÃO DE COTAÇÃO — MR ENGENHARIA]
+    return `[SOLICITAÇÃO DE COTAÇÃO — MVR ENGENHARIA]
 Empresa: ${formData.company || 'Não informada'}
 Solicitante: ${formData.name || 'Não informado'}
 E-mail: ${formData.email || 'Não informado'}
@@ -107,7 +107,7 @@ ${formData.message || 'Solicito especificações vigentes, disponibilidade de lo
                   {COMMERCIAL_CONTACT.name}
                 </h3>
                 <div className="text-xs text-slate-400 mt-1">
-                  MR Engenharia · Exportação Internacional de Minérios
+                  MVR Engenharia · Exportação Internacional de Minérios
                 </div>
               </div>
 

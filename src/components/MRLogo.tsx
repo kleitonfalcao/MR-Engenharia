@@ -13,25 +13,25 @@ export const MRLogo: React.FC<MRLogoProps> = ({
 }) => {
   const iconSizes = {
     sm: 'w-8 h-8',
-    md: 'w-10 h-10',
-    lg: 'w-14 h-14'
+    md: 'w-9 h-9 sm:w-10 sm:h-10',
+    lg: 'w-12 h-12 sm:w-14 sm:h-14'
   };
 
   const textSizes = {
-    sm: 'text-base',
-    md: 'text-xl',
-    lg: 'text-3xl'
+    sm: 'text-sm sm:text-base',
+    md: 'text-base sm:text-xl',
+    lg: 'text-2xl sm:text-3xl'
   };
 
   const subSizes = {
-    sm: 'text-[9px]',
-    md: 'text-[10px]',
-    lg: 'text-xs'
+    sm: 'text-[8px] sm:text-[9px]',
+    md: 'text-[9px] sm:text-[10px]',
+    lg: 'text-[11px] sm:text-xs'
   };
 
   return (
-    <div className={`flex items-center gap-3 select-none ${className}`}>
-      {/* Precision Geometric Monogram Symbol */}
+    <div className={`flex items-center gap-2 sm:gap-3 select-none ${className}`}>
+      {/* Precision Geometric Monogram Symbol with M, V, R */}
       <div className={`relative ${iconSizes[size]} shrink-0 flex items-center justify-center`}>
         <svg
           viewBox="0 0 100 100"
@@ -40,19 +40,19 @@ export const MRLogo: React.FC<MRLogoProps> = ({
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
-            <linearGradient id="mrGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <linearGradient id="mvrGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#FDE68A" />
               <stop offset="35%" stopColor="#F59E0B" />
               <stop offset="70%" stopColor="#D97706" />
               <stop offset="100%" stopColor="#92400E" />
             </linearGradient>
-            <linearGradient id="mrSilverGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#CBD5E1" />
+            <linearGradient id="mvrSilverGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#E2E8F0" />
               <stop offset="50%" stopColor="#FFFFFF" />
-              <stop offset="100%" stopColor="#64748B" />
+              <stop offset="100%" stopColor="#94A3B8" />
             </linearGradient>
-            <linearGradient id="mrFacetGrad" x1="20%" y1="0%" x2="80%" y2="100%">
-              <stop offset="0%" stopColor="#F59E0B" stopOpacity="0.3" />
+            <linearGradient id="mvrFacetGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+              <stop offset="0%" stopColor="#F59E0B" stopOpacity="0.25" />
               <stop offset="100%" stopColor="#D97706" stopOpacity="0.05" />
             </linearGradient>
           </defs>
@@ -60,55 +60,75 @@ export const MRLogo: React.FC<MRLogoProps> = ({
           {/* Outer Hexagonal Geological Mineral Crystal Shield */}
           <polygon
             points="50,4 90,26 90,74 50,96 10,74 10,26"
-            stroke="url(#mrGoldGrad)"
+            stroke="url(#mvrGoldGrad)"
             strokeWidth="3.5"
-            fill="url(#mrFacetGrad)"
+            fill="url(#mvrFacetGrad)"
             strokeLinejoin="round"
           />
 
-          {/* Precision Engineering Compass / Crystal Cleavage Diagonal Lines */}
-          <line x1="50" y1="4" x2="50" y2="96" stroke="url(#mrSilverGrad)" strokeWidth="1" strokeOpacity="0.3" strokeDasharray="3 3" />
-          <line x1="10" y1="50" x2="90" y2="50" stroke="url(#mrSilverGrad)" strokeWidth="1" strokeOpacity="0.3" strokeDasharray="3 3" />
+          {/* Precision Engineering Compass / Crystal Cleavage Guidelines */}
+          <line x1="50" y1="4" x2="50" y2="96" stroke="url(#mvrSilverGrad)" strokeWidth="1" strokeOpacity="0.25" strokeDasharray="3 3" />
+          <line x1="10" y1="50" x2="90" y2="50" stroke="url(#mvrSilverGrad)" strokeWidth="1" strokeOpacity="0.25" strokeDasharray="3 3" />
 
-          {/* Stylized Interlocking Monogram: M and R */}
-          {/* M Shape */}
+          {/* Interlocking Monogram: M, V and R */}
+          {/* M Left and Center Structure */}
           <path
-            d="M26 68 L26 32 L40 54 L50 38 L60 54 L74 32 L74 68"
-            stroke="url(#mrSilverGrad)"
-            strokeWidth="4"
+            d="M22 68 L22 32 L38 52 L50 36"
+            stroke="url(#mvrSilverGrad)"
+            strokeWidth="3.8"
             strokeLinecap="round"
             strokeLinejoin="round"
             fill="none"
           />
 
-          {/* Interlocking Golden R Accents */}
+          {/* Central V Wedge Accent */}
           <path
-            d="M48 40 H64 C70 40 73 44 73 49 C73 54 70 58 64 58 H50 M60 58 L72 68"
-            stroke="url(#mrGoldGrad)"
-            strokeWidth="4"
+            d="M38 52 L50 72 L62 52"
+            stroke="url(#mvrGoldGrad)"
+            strokeWidth="3.8"
             strokeLinecap="round"
             strokeLinejoin="round"
             fill="none"
           />
 
-          {/* Central Precious Core Crystal */}
+          {/* R Structure on Right */}
+          <path
+            d="M50 36 L62 52 L78 32 L78 68"
+            stroke="url(#mvrSilverGrad)"
+            strokeWidth="3.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
+          />
+
+          {/* R Bow and Leg */}
+          <path
+            d="M52 36 H68 C74 36 78 40 78 46 C78 52 74 56 68 56 H54 M64 56 L76 68"
+            stroke="url(#mvrGoldGrad)"
+            strokeWidth="3.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
+          />
+
+          {/* Core Crystal Spark */}
           <polygon
-            points="50,45 54,51 50,57 46,51"
-            fill="url(#mrGoldGrad)"
+            points="50,48 53,52 50,56 47,52"
+            fill="url(#mvrGoldGrad)"
           />
         </svg>
       </div>
 
       {/* Brand Typographic Wordmark */}
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center min-w-0">
         <span
-          className={`${textSizes[size]} font-extrabold tracking-wider text-white font-display uppercase leading-tight`}
+          className={`${textSizes[size]} font-black tracking-wide text-white font-display uppercase leading-tight whitespace-nowrap`}
         >
-          MR <span className="text-amber-400">ENGENHARIA</span>
+          MVR <span className="text-amber-400">ENGENHARIA</span>
         </span>
         {showSubtitle && (
           <span
-            className={`${subSizes[size]} tracking-[0.22em] text-slate-400 uppercase font-medium mt-0.5`}
+            className={`${subSizes[size]} tracking-[0.2em] text-slate-400 uppercase font-medium mt-0.5 whitespace-nowrap hidden sm:block`}
           >
             Exportação de Minérios do Brasil
           </span>

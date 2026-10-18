@@ -1,6 +1,6 @@
 {
   "name": "MR Engenharia – Exportação de Minérios do Brasil",
-  "description": "Website institucional e comercial internacional da MR Engenharia para exportação de minérios brasileiros (Ferro, Manganês, Sílica, Lítio, Cobre, Tungstênio e Cassiterita).",
+  "description": "Website institucional e comercial internacional da MVR Engenharia para exportação de minérios brasileiros (Ferro, Manganês, Sílica, Lítio, Cobre, Tungstênio e Cassiterita).",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

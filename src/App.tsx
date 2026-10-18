@@ -28,10 +28,10 @@ export default function App() {
   useEffect(() => {
     document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : currentLang;
     const titles: Record<Language, string> = {
-      pt: 'MR Engenharia — Exportação Internacional de Minérios do Brasil',
-      en: 'MR Engenharia — Brazilian Minerals Supply & International Export',
-      es: 'MR Engenharia — Exportación Internacional de Minerales de Brasil',
-      zh: 'MR Engenharia — 巴西大宗矿石国际海运出口与直供'
+      pt: 'MVR Engenharia — Exportação Internacional de Minérios do Brasil',
+      en: 'MVR Engenharia — Brazilian Minerals Supply & International Export',
+      es: 'MVR Engenharia — Exportación Internacional de Minerales de Brasil',
+      zh: 'MVR Engenharia — 巴西大宗矿石国际海运出口与直供'
     };
     document.title = titles[currentLang];
   }, [currentLang]);

@@ -35,7 +35,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onExplore }) => {
           <div className="lg:col-span-7 space-y-6">
             {/* Quiet metadata kicker */}
             <div className="flex flex-wrap items-center gap-2 text-xs font-semibold text-slate-400">
-              <span className="text-amber-400 tracking-wider uppercase">MR ENGENHARIA</span>
+              <span className="text-amber-400 tracking-wider uppercase">MVR ENGENHARIA</span>
               <span aria-hidden="true" className="text-slate-600">·</span>
               <span>Comércio & Exportação Internacional de Minérios</span>
               <span aria-hidden="true" className="text-slate-600">·</span>
@@ -58,7 +58,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onExplore }) => {
               {t.hero.subtitle}
             </p>
 
-            {/* Single Primary Action Button (per user instruction: removed the Marcus Vinicius button from here) */}
+            {/* Single Primary Action Button */}
             <div className="pt-2">
               <button
                 onClick={onExplore}

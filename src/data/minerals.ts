@@ -1179,16 +1179,16 @@ export const PORTS_INFO = [
 ];
 
 export const COMMERCIAL_CONTACT = {
-  name: 'Marcus Vinicius',
+  name: 'Marcus Ribeiro',
   title: {
     pt: 'Responsável Comercial & Exportação',
     en: 'Head of International Commercial & Export',
     es: 'Responsable Comercial y Exportación',
     zh: '国际商务与出口贸易总监'
   },
-  phoneDisplay: '+55 71 9198-8787',
-  phoneDial: '+557191988787',
-  emailDisplay: 'marcus.vinicius@mrengenharia.com.br',
-  company: 'MR Engenharia',
+  phoneDisplay: '+55 71 99198-8787',
+  phoneDial: '+5571991988787',
+  emailDisplay: 'marcus.ribeiro@mvrengenharia.com',
+  company: 'MVR Engenharia',
   location: 'Salvador, Bahia, Brasil'
 };

@@ -221,9 +221,9 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       metric4Sub: 'Consultas técnicas e comerciais sob demanda'
     },
     about: {
-      title: 'Sobre a MR Engenharia',
+      title: 'Sobre a MVR Engenharia',
       subtitle: 'Estrutura brasileira de comercialização e exportação de matérias-primas minerais',
-      p1: 'A MR Engenharia atua como elo confiável no fornecimento de minerais e commodities industriais de origem brasileira para os mercados mais exigentes do mundo. Operamos com transparência comercial, foco em especificações técnicas e interlocução direta com compradores internacionais, tradings e siderúrgicas.',
+      p1: 'A MVR Engenharia atua como elo confiável no fornecimento de minerais e commodities industriais de origem brasileira para os mercados mais exigentes do mundo. Operamos com transparência comercial, foco em especificações técnicas e interlocução direta com compradores internacionais, tradings e siderúrgicas.',
       p2: 'Nossa abordagem prioriza a fidelidade estrita às características comprovadas de cada jazida e lote, garantindo que cada negociação internacional conte com parâmetros claros de inspeção (SGS ou equivalente) e segurança documental em todas as etapas de embarque.',
       pillar1Title: 'Portfólio Diversificado',
       pillar1Desc: 'Sete grupos de minérios estratégicos: Ferro, Manganês, Sílica ultrafina, Lítio, Cobre, Tungstênio e Cassiterita.',
@@ -271,7 +271,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       paymentMechanism: 'Condição de Pagamento Indicada',
       modalClose: 'Fechar Janela',
       directContactWith: 'Falar diretamente com a Mesa Comercial',
-      phoneLink: 'Ligar para +55 71 9198-8787',
+      phoneLink: 'Ligar para +55 71 99198-8787',
       whatsappLink: 'Mensagem via WhatsApp',
       emailLink: 'Enviar E-mail Comercial',
       quoteButton: 'Solicitar Condições Comerciais para este Minério'
@@ -279,7 +279,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
     logistics: {
       title: 'Exportação, Portos & Logística Internacional',
       subtitle: 'Infraestrutura marítima brasileira conectada aos principais hubs industriais globais',
-      intro: 'O fornecimento internacional de minérios exige sincronia entre mina, transporte rodoviário/ferroviário e os terminais portuários brasileiros de águas profundas. Conheça as principais rotas de embarque da MR Engenharia:',
+      intro: 'O fornecimento internacional de minérios exige sincronia entre mina, transporte rodoviário/ferroviário e os terminais portuários brasileiros de águas profundas. Conheça as principais rotas de embarque da MVR Engenharia:',
       portBarcarenaTitle: 'Porto de Barcarena (Pará)',
       portSalvadorTitle: 'Porto de Salvador (Bahia)',
       portPecemTitle: 'Porto de Pecém (Ceará)',
@@ -301,7 +301,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
     quality: {
       title: 'Qualidade & Transparência Técnica',
       subtitle: 'Compromisso com dados verificáveis e integridade em cada especificação mineral',
-      commitment: 'A MR Engenharia pauta sua atuação no fornecimento de dados transparentes. Não realizamos promessas de especificações sem laudo laboratorial correspondente.',
+      commitment: 'A MVR Engenharia pauta sua atuação no fornecimento de dados transparentes. Não realizamos promessas de especificações sem laudo laboratorial correspondente.',
       point1Title: 'Laudos Analíticos Certificados',
       point1Desc: 'Ensaios realizados por laboratórios mineralógicos independentes por fluorescência de raios-X (XRF) e espectrometria ICP.',
       point2Title: 'Controle de Umidade & Granulometria',
@@ -343,8 +343,8 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
     },
     contact: {
       title: 'Contato Comercial Direto',
-      subtitle: 'Inicie sua consulta de fornecimento diretamente com a liderança comercial da MR Engenharia',
-      directLead: 'Marcus Vinicius',
+      subtitle: 'Inicie sua consulta de fornecimento diretamente com a liderança comercial da MVR Engenharia',
+      directLead: 'Marcus Ribeiro',
       directLeadSub: 'Responsável Comercial & Exportações Internacionais',
       formTitle: 'Solicitação Formal de Cotação',
       formSubtitle: 'Preencha os dados da sua empresa para receber especificações, disponibilidade e condições de fornecimento.',
@@ -361,7 +361,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       copyInquiry: 'Copiar Mensagem Formatada',
       inquiryCopied: 'Mensagem copiada para a área de transferência!',
       successMessage: 'Solicitação registrada com sucesso! Nossa equipe entrará em contato prontamente.',
-      directPhoneAction: 'Ligar para Marcus Vinicius',
+      directPhoneAction: 'Ligar para Marcus Ribeiro',
       directWhatsappAction: 'Iniciar Conversa no WhatsApp',
       directEmailAction: 'Enviar E-mail Direto',
       privacyConsent: 'Concordo com o tratamento dos dados comerciais fornecidos exclusivamente para a finalidade desta cotação (em conformidade com a LGPD).'
@@ -409,9 +409,9 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       metric4Sub: 'Technical & commercial inquiries on demand'
     },
     about: {
-      title: 'About MR Engenharia',
+      title: 'About MVR Engenharia',
       subtitle: 'Brazilian mineral supply and international commodities trading framework',
-      p1: 'MR Engenharia serves as a trusted conduit delivering industrial raw minerals from premier Brazilian geological formations to world-class industrial buyers, metallurgical smelters, and international trading houses.',
+      p1: 'MVR Engenharia serves as a trusted conduit delivering industrial raw minerals from premier Brazilian geological formations to world-class industrial buyers, metallurgical smelters, and international trading houses.',
       p2: 'Our approach is rooted in rigorous technical truthfulness: we present confirmed source assays transparently, mandate independent third-party inspection (SGS or equivalent) at loading ports, and structure bankable commercial agreements for long-term supply stability.',
       pillar1Title: 'Comprehensive Portfolio',
       pillar1Desc: 'Seven strategic mineral groups: Iron Ore, Manganese Ore, Ultrafine Silica, Lithium, Copper, Tungsten, and Cassiterite.',
@@ -459,7 +459,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       paymentMechanism: 'Documented Payment Instrument',
       modalClose: 'Close Window',
       directContactWith: 'Direct Contact with Commercial Desk',
-      phoneLink: 'Call +55 71 9198-8787',
+      phoneLink: 'Call +55 71 99198-8787',
       whatsappLink: 'WhatsApp Chat',
       emailLink: 'Send Commercial Email',
       quoteButton: 'Request Commercial Terms for this Mineral'
@@ -467,7 +467,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
     logistics: {
       title: 'Export Operations, Ports & International Logistics',
       subtitle: 'Brazilian deepwater infrastructure interconnected with leading global manufacturing hubs',
-      intro: 'International mineral trading demands seamless synchronization between mining sites, freight rail corridors, and Brazil’s deepwater ocean terminals. Key export gateways operated by MR Engenharia include:',
+      intro: 'International mineral trading demands seamless synchronization between mining sites, freight rail corridors, and Brazil’s deepwater ocean terminals. Key export gateways operated by MVR Engenharia include:',
       portBarcarenaTitle: 'Port of Barcarena (Pará)',
       portSalvadorTitle: 'Port of Salvador (Bahia)',
       portPecemTitle: 'Port of Pecém Industrial Hub (Ceará)',
@@ -480,7 +480,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       workflowStep1: '01. Commercial Inquiry',
       workflowStep1Desc: 'Buyer submits target grade, intended tonnage, and destination discharge port.',
       workflowStep2: '02. Technical Dossier & Allocation',
-      workflowStep2Desc: 'MR Engenharia confirms laycan availability, current assay sheet, and supply draft.',
+      workflowStep2Desc: 'MVR Engenharia confirms laycan availability, current assay sheet, and supply draft.',
       workflowStep3: '03. Banking Instrument Issuance',
       workflowStep3Desc: 'Issuance and acceptance of confirmed SBLC through premier international banking institutions.',
       workflowStep4: '04. Loading & Document Release',
@@ -489,7 +489,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
     quality: {
       title: 'Quality Standards & Technical Transparency',
       subtitle: 'Uncompromising commitment to verifiable data and contract integrity in mineral trading',
-      commitment: 'MR Engenharia operates with strict adherence to authentic metallurgical data. We never promise speculative specifications without substantiated laboratory assays.',
+      commitment: 'MVR Engenharia operates with strict adherence to authentic metallurgical data. We never promise speculative specifications without substantiated laboratory assays.',
       point1Title: 'Certified Analytical Assays',
       point1Desc: 'Independent laboratory testing via X-ray fluorescence (XRF) and inductively coupled plasma (ICP) spectrometry.',
       point2Title: 'Moisture & Particle Size Control',
@@ -531,8 +531,8 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
     },
     contact: {
       title: 'Direct Commercial Contact',
-      subtitle: 'Initiate your mineral procurement inquiries directly with MR Engenharia commercial leadership',
-      directLead: 'Marcus Vinicius',
+      subtitle: 'Initiate your mineral procurement inquiries directly with MVR Engenharia commercial leadership',
+      directLead: 'Marcus Ribeiro',
       directLeadSub: 'Commercial Director & Head of International Export',
       formTitle: 'Formal Quotation Request',
       formSubtitle: 'Submit your industrial requirements to receive current specifications, availability, and export conditions.',
@@ -549,7 +549,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       copyInquiry: 'Copy Formatted Inquiry',
       inquiryCopied: 'Inquiry copied to clipboard!',
       successMessage: 'Inquiry successfully registered! Our commercial executive will reach out promptly.',
-      directPhoneAction: 'Call Marcus Vinicius',
+      directPhoneAction: 'Call Marcus Ribeiro',
       directWhatsappAction: 'Open WhatsApp Chat',
       directEmailAction: 'Send Commercial Email',
       privacyConsent: 'I consent to the processing of submitted commercial data exclusively for the purpose of this procurement inquiry.'
@@ -597,9 +597,9 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       metric4Sub: 'Consultas técnicas y comerciales bajo demanda'
     },
     about: {
-      title: 'Sobre MR Engenharia',
+      title: 'Sobre MVR Engenharia',
       subtitle: 'Estructura brasileña de exportación y comercialización de minerales industriales',
-      p1: 'MR Engenharia opera como un socio comercial confiable en el suministro de minerales y materias primas de origen brasileño para industrias siderúrgicas, metalúrgicas y empresas de trading internacionales.',
+      p1: 'MVR Engenharia opera como un socio comercial confiable en el suministro de minerales y materias primas de origen brasileño para industrias siderúrgicas, metalúrgicas y empresas de trading internacionales.',
       p2: 'Nuestra política comercial se fundamenta en la veracidad técnica: presentamos datos analíticos comprobados, respaldados por inspección independiente (SGS o equivalente) en los puertos de embarque y garantías bancarias seguras.',
       pillar1Title: 'Portafolio Diversificado',
       pillar1Desc: 'Siete grupos de minerales estratégicos: Hierro, Manganeso, Sílice ultrafina, Litio, Cobre, Tungsteno y Casiterita.',
@@ -647,7 +647,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       paymentMechanism: 'Instrumento de Pago Indicado',
       modalClose: 'Cerrar Ventana',
       directContactWith: 'Contacto Directo con Mesa Comercial',
-      phoneLink: 'Llamar a +55 71 9198-8787',
+      phoneLink: 'Llamar a +55 71 99198-8787',
       whatsappLink: 'Chat por WhatsApp',
       emailLink: 'Enviar Correo Comercial',
       quoteButton: 'Solicitar Condiciones para este Mineral'
@@ -677,7 +677,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
     quality: {
       title: 'Calidad y Transparencia Técnica',
       subtitle: 'Compromiso con datos reales y confiabilidad en cada especificación mineral',
-      commitment: 'MR Engenharia fundamenta sus negocios en especificaciones rigurosas. No emitimos promesas comerciales sin respaldo de análisis laboratoriales.',
+      commitment: 'MVR Engenharia fundamenta sus negocios en especificaciones rigurosas. No emitimos promesas comerciales sin respaldo de análisis laboratoriales.',
       point1Title: 'Ensayos Analíticos Certificados',
       point1Desc: 'Pruebas analíticas mediante fluorescencia de rayos X (FRX) y espectrometría ICP en laboratorios independientes.',
       point2Title: 'Control de Humedad y Granulometría',
@@ -719,8 +719,8 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
     },
     contact: {
       title: 'Contacto Comercial Directo',
-      subtitle: 'Consulte condiciones de suministro con la dirección comercial de MR Engenharia',
-      directLead: 'Marcus Vinicius',
+      subtitle: 'Consulte condiciones de suministro con la dirección comercial de MVR Engenharia',
+      directLead: 'Marcus Ribeiro',
       directLeadSub: 'Responsable Comercial y Exportaciones Internacionales',
       formTitle: 'Solicitud Formal de Cotización',
       formSubtitle: 'Indique los requerimientos de su empresa para recibir especificaciones, disponibilidad y términos comerciales.',
@@ -737,7 +737,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       copyInquiry: 'Copiar Mensaje Formateado',
       inquiryCopied: '¡Mensaje copiado al portapapeles!',
       successMessage: '¡Solicitud registrada con éxito! Nuestro responsable comercial se comunicará a la brevedad.',
-      directPhoneAction: 'Llamar a Marcus Vinicius',
+      directPhoneAction: 'Llamar a Marcus Ribeiro',
       directWhatsappAction: 'Iniciar Chat en WhatsApp',
       directEmailAction: 'Enviar Correo Electrónico',
       privacyConsent: 'Acepto el tratamiento de los datos comerciales suministrados exclusivamente para los fines de esta cotización.'
@@ -769,7 +769,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
     hero: {
       title: '巴西优质矿产。',
       highlight: '连通全球工业。',
-      subtitle: 'MR Engenharia 专注于巴西优质工业大宗矿产及战略稀有矿石的国际海运出口。如需获取当前批次化验单、可供配额及贸易交货条件，欢迎直接咨询商务团队。',
+      subtitle: 'MVR Engenharia 专注于巴西优质工业大宗矿产及战略稀有矿石的国际海运出口。如需获取当前批次化验单、可供配额及贸易交货条件，欢迎直接咨询商务团队。',
       ctaExplore: '浏览矿石产品全览',
       metric1Label: '主要矿石品类',
       metric1Value: '07 大产品',
@@ -785,9 +785,9 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       metric4Sub: '响应式技术与商务询盘对接'
     },
     about: {
-      title: '关于 MR Engenharia',
+      title: '关于 MVR Engenharia',
       subtitle: '立足巴西矿业资源，面向全球钢铁、新能源及高端制造业的直供平台',
-      p1: 'MR Engenharia 是巴西具有国际视野的矿产品贸易与出口服务商，专注于向全球钢铁集团、有色冶炼厂、新能源材料企业及国际贸易商提供稳定、合规的巴西优质矿石资源。',
+      p1: 'MVR Engenharia 是巴西具有国际视野的矿产品贸易与出口服务商，专注于向全球钢铁集团、有色冶炼厂、新能源材料企业及国际贸易商提供稳定、合规的巴西优质矿石资源。',
       p2: '我们严格奉行实事求是的商业与技术准则：标示指标透明公开，所有发运均严格执行装运港第三方国际权威商检（SGS或同等资质），采用国际通行金融工具，保障买卖双方权益。',
       pillar1Title: '多元化战略矿产',
       pillar1Desc: '涵盖铁矿石 (Fe 62%)、锰矿石 (Mn 42.28%)、超细高纯二氧化硅、锂矿及碳酸锂、铜矿石、钨精矿及锡石等核心品类。',
@@ -835,7 +835,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       paymentMechanism: '标定结算方式',
       modalClose: '关闭窗口',
       directContactWith: '直接连线商业台总监',
-      phoneLink: '国际直拨：+55 71 9198-8787',
+      phoneLink: '国际直拨：+55 71 99198-8787',
       whatsappLink: '通过 WhatsApp 沟通',
       emailLink: '发送商务邮件',
       quoteButton: '索取本品当前报价与船期'
@@ -843,7 +843,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
     logistics: {
       title: '矿产出口、装运深水港与国际物流',
       subtitle: '巴西大西洋深水港区与全球各大工业枢纽的高效海运通道',
-      intro: '跨国大宗矿石贸易对矿山出库、陆运接卸及深水港装船能力有着严苛要求。MR Engenharia 依托巴西三大国际枢纽港口保障交付：',
+      intro: '跨国大宗矿石贸易对矿山出库、陆运接卸及深水港装船能力有着严苛要求。MVR Engenharia 依托巴西三大国际枢纽港口保障交付：',
       portBarcarenaTitle: '巴卡雷纳深水港 (Barcarena, Pará)',
       portSalvadorTitle: '萨尔瓦多港 (Salvador, Bahia)',
       portPecemTitle: '佩森现代化离岸港 (Pecém, Ceará)',
@@ -856,7 +856,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       workflowStep1: '01. 商务询盘',
       workflowStep1Desc: '买方提出目标产品、意向采购量、品位指标要求及目的口岸。',
       workflowStep2: '02. 卷宗与配额锁定',
-      workflowStep2Desc: 'MR Engenharia 核算船期档期 (Laycan)，提供现行化验单与供货合同草案。',
+      workflowStep2Desc: 'MVR Engenharia 核算船期档期 (Laycan)，提供现行化验单与供货合同草案。',
       workflowStep3: '03. 银行金融工具开立',
       workflowStep3Desc: '买方通过国际知名银行开立经双方认可的 SBLC 信用证担保。',
       workflowStep4: '04. 港口监装与单证交付',
@@ -865,7 +865,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
     quality: {
       title: '质量保证与技术真实性',
       subtitle: '坚守真实化验数据，对每一个矿石品级信守承诺',
-      commitment: 'MR Engenharia 严格执行合规自律：我们绝不对未经验证的品位指标做出虚假承诺，一切以权威检测报告与合同条款为准。',
+      commitment: 'MVR Engenharia 严格执行合规自律：我们绝不对未经验证的品位指标做出虚假承诺，一切以权威检测报告与合同条款为准。',
       point1Title: '权威仪器精密化验',
       point1Desc: '由独立认证矿产实验室通过 X 射线荧光光谱仪 (XRF) 及电感耦合等离子体光谱仪 (ICP) 测定全元素含量。',
       point2Title: '严格的水分与粒度控制',
@@ -899,7 +899,7 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
       q3: '货物开航前如何确保品质与数量准确？',
       a3: '货物在巴西装运港（巴卡雷纳、萨尔瓦多或佩森港）由 SGS、Alex Stewart 等独立商检专家实施全程监装，包括水尺计重测量及代表性连续采样，确保货物品质与报告完全一致。',
       q4: '国际买家如何获取完整化验单或申请测试样品？',
-      a4: '买家可直接与商务团队取得联系 (+55 71 9198-8787)，提供贵司企业资质、意向采购量及目的港口。经审核后，我们将第一时间发送最新的详细实验室化验单及供货卷宗。',
+      a4: '买家可直接与商务团队取得联系 (+55 71 99198-8787)，提供贵司企业资质、意向采购量及目的港口。经审核后，我们将第一时间发送最新的详细实验室化验单及供货卷宗。',
       q5: '散装货 (Bulk) 与吨袋 (Big Bags) 包装如何区分？',
       a5: '超大宗货品如铁矿石 (Fe 约62%) 与锰矿石 (Mn 42.28%) 均在巴卡雷纳深水码头通过输送带直接装入巴拿马型或灵便型大散货船船舱；特种高纯矿产（如超细硅石、锂产品、铜矿石、钨精矿）采用 1,000 公斤加厚内膜防潮吨袋或标准海运集装箱装运。',
       q6: '每批出口货物附带哪些完整的清关贸易单证？',
@@ -907,8 +907,8 @@ export const TRANSLATIONS: Record<Language, I18nContent> = {
     },
     contact: {
       title: '直接对接商务总监',
-      subtitle: '直接与 MR Engenharia 核心商业团队沟通，快速开启采购评估',
-      directLead: 'Marcus Vinicius',
+      subtitle: '直接与 MVR Engenharia 核心商业团队沟通，快速开启采购评估',
+      directLead: 'Marcus Ribeiro',
       directLeadSub: '国际商业贸易与出口业务负责人',
       formTitle: '提交正式采购询价表',
       formSubtitle: '请填写贵司采购需求，我们将迅速提供当期化学分析单、可供批次与国际海运条款。',

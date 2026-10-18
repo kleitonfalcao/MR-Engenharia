@@ -52,10 +52,10 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
   // Contextual prefilled inquiry text
   const prefilledInquiry: Record<Language, string> = {
-    pt: `Olá Marcus Vinicius, gostaria de solicitar informações técnicas, disponibilidade e condições comerciais vigentes para exportação de ${mineral.name.pt} (${mineral.chemicalSymbol}). Nossa empresa busca fornecimento para aplicação industrial.`,
-    en: `Hello Marcus Vinicius, I would like to receive further technical information, availability, and export commercial terms for ${mineral.name.en} (${mineral.chemicalSymbol}). Our company seeks regular industrial supply.`,
-    es: `Hola Marcus Vinicius, desearía solicitar información técnica, disponibilidad y condiciones comerciales vigentes para la exportación de ${mineral.name.es} (${mineral.chemicalSymbol}).`,
-    zh: `您好 Marcus Vinicius 商务总监，我们希望获取关于巴西产 ${mineral.name.zh} (${mineral.chemicalSymbol}) 的最新全分析化验单、当前批次配额及国际海运出口商务条款。`
+    pt: `Olá Marcus Ribeiro, gostaria de solicitar informações técnicas, disponibilidade e condições comerciais vigentes para exportação de ${mineral.name.pt} (${mineral.chemicalSymbol}). Nossa empresa busca fornecimento para aplicação industrial.`,
+    en: `Hello Marcus Ribeiro, I would like to receive further technical information, availability, and export commercial terms for ${mineral.name.en} (${mineral.chemicalSymbol}). Our company seeks regular industrial supply.`,
+    es: `Hola Marcus Ribeiro, desearía solicitar información técnica, disponibilidad y condiciones comerciales vigentes para la exportación de ${mineral.name.es} (${mineral.chemicalSymbol}).`,
+    zh: `您好 Marcus Ribeiro 商务总监，我们希望获取关于巴西产 ${mineral.name.zh} (${mineral.chemicalSymbol}) 的最新全分析化验单、当前批次配额及国际海运出口商务条款。`
   };
 
   const handleCopyInquiry = () => {
@@ -69,7 +69,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
   )}`;
 
   const mailtoUrl = `mailto:${COMMERCIAL_CONTACT.emailDisplay}?subject=${encodeURIComponent(
-    `Export Inquiry — ${mineral.name[currentLang]} (${mineral.chemicalSymbol}) — MR Engenharia`
+    `Export Inquiry — ${mineral.name[currentLang]} (${mineral.chemicalSymbol}) — MVR Engenharia`
   )}&body=${encodeURIComponent(prefilledInquiry[currentLang])}`;
 
   // Prominent topic definitions with numbers, clear icons, and descriptive titles
